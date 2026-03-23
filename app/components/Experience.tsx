@@ -17,7 +17,7 @@ const Experience = () => {
     {
       company: "Africa Road Maintenance Fund (ARMFA)",
       role: "Software Engineer (Consultant)",
-      period: "Nov 2024 - Sep 2025",
+      period: "Nov 2024 - Present",
       description: "Infrastructure audit and web development.",
       achievements: [
         "Developed organization website using Next.js with CMS integration.",
@@ -72,7 +72,7 @@ const Experience = () => {
         {experience.map((job, index) => (
           <div key={index} className="relative">
             <span className="absolute -left-[41px] md:-left-[57px] top-1 h-5 w-5 rounded-full border-4 border-white dark:border-slate-900 bg-cyan-500"></span>
-            
+
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
               <h3 className="text-xl font-bold text-slate-900 dark:text-white">{job.role}</h3>
               <span className="text-sm font-mono text-cyan-600 dark:text-cyan-400">{job.period}</span>
