@@ -36,21 +36,21 @@ const Navbar = () => {
   const navLinks = ['About', 'Skills', 'Experience', 'Projects', 'Contact'];
 
   return (
-    <nav className="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+    <nav className="fixed w-full z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 cursor-pointer" onClick={() => scrollToSection('home')}>
-            <span className="text-2xl font-bold text-cyan-400">JKM<span className="text-white">.</span></span>
+            <span className="text-2xl font-bold text-cyan-500 dark:text-cyan-400">JKM<span className="text-slate-900 dark:text-white">.</span></span>
           </div>
           
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              {navLinks.map((item) => (
+               {navLinks.map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className={`${activeSection === item.toLowerCase() ? 'text-cyan-400' : 'text-slate-300 hover:text-white'} px-3 py-2 rounded-md text-sm font-medium transition-colors`}
+                  className={`${activeSection === item.toLowerCase() ? 'text-cyan-500 dark:text-cyan-400' : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'} px-3 py-2 rounded-md text-sm font-medium transition-colors`}
                 >
                   {item}
                 </button>
@@ -70,7 +70,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-slate-300 hover:text-white p-2"
+              className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white p-2"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -80,13 +80,13 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-slate-800 border-b border-slate-700">
+        <div className="md:hidden bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {['Home', ...navLinks].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700"
+                className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-700"
               >
                 {item}
               </button>

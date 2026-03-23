@@ -63,25 +63,25 @@ const Experience = () => {
 
   return (
     <section id="experience" className="py-20 px-4 max-w-4xl mx-auto">
-      <h2 className="flex items-center text-2xl md:text-3xl font-bold text-white mb-12">
-        <span className="text-cyan-400 mr-2">03.</span> Where I've Worked
-        <span className="hidden md:block h-px bg-slate-700 flex-grow ml-4"></span>
+      <h2 className="flex items-center text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-12">
+        <span className="text-cyan-600 dark:text-cyan-400 mr-2">03.</span> Where I've Worked
+        <span className="hidden md:block h-px bg-slate-200 dark:bg-slate-700 flex-grow ml-4"></span>
       </h2>
 
-      <div className="space-y-12 border-l-2 border-slate-700 ml-3 md:ml-6 pl-8 md:pl-12 relative">
+      <div className="space-y-12 border-l-2 border-slate-200 dark:border-slate-700 ml-3 md:ml-6 pl-8 md:pl-12 relative">
         {experience.map((job, index) => (
           <div key={index} className="relative">
-            <span className="absolute -left-[41px] md:-left-[57px] top-1 h-5 w-5 rounded-full border-4 border-slate-900 bg-cyan-500"></span>
+            <span className="absolute -left-[41px] md:-left-[57px] top-1 h-5 w-5 rounded-full border-4 border-white dark:border-slate-900 bg-cyan-500"></span>
             
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-              <h3 className="text-xl font-bold text-white">{job.role}</h3>
-              <span className="text-sm font-mono text-cyan-400">{job.period}</span>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white">{job.role}</h3>
+              <span className="text-sm font-mono text-cyan-600 dark:text-cyan-400">{job.period}</span>
             </div>
-            <h4 className="text-lg text-slate-400 font-medium mb-4">{job.company}</h4>
+            <h4 className="text-lg text-slate-600 dark:text-slate-400 font-medium mb-4">{job.company}</h4>
             <ul className="space-y-2">
               {job.achievements.map((item, i) => (
-                <li key={i} className="flex items-start text-slate-400 text-sm md:text-base">
-                  <span className="text-cyan-400 mr-2 mt-1.5">▹</span>
+                <li key={i} className="flex items-start text-slate-600 dark:text-slate-400 text-sm md:text-base">
+                  <span className="text-cyan-600 dark:text-cyan-400 mr-2 mt-1.5">▹</span>
                   <span>{item}</span>
                 </li>
               ))}

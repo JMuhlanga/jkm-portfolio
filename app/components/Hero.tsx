@@ -21,17 +21,17 @@ const Hero = () => {
     >
       {/* LEFT — TEXT */}
       <div className="flex-1 text-left">
-        <p className="text-cyan-400 font-medium mb-4 tracking-wide">Hi, my name is</p>
+        <p className="text-cyan-600 dark:text-cyan-400 font-medium mb-4 tracking-wide">Hi, my name is</p>
 
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight">
+        <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-4 tracking-tight">
           José Kupeka Muhlanga.
         </h1>
 
-        <h2 className="text-4xl md:text-6xl font-bold text-slate-400 mb-6">
+        <h2 className="text-4xl md:text-6xl font-bold text-slate-600 dark:text-slate-400 mb-6">
           I build scalable systems.
         </h2>
 
-        <p className="max-w-xl text-lg text-slate-400 mb-8 leading-relaxed">
+        <p className="max-w-xl text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
           I'm a Full Stack Software Engineer & DevOps Specialist based in Nairobi, Kenya.
           I specialize in designing secure APIs, deploying containerized microservices,
           and building modern frontend applications for health, finance, and government sectors.
@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4">
           <button
             onClick={() => scrollToSection('projects')}
-            className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 
+            className="border-2 border-cyan-600 dark:border-cyan-400 text-cyan-600 dark:text-cyan-400 hover:bg-cyan-50 dark:hover:bg-cyan-400/10 
                        px-6 py-3 rounded-md font-medium transition-all"
           >
             Check out my work
