@@ -13,6 +13,13 @@
   /* Replace Geist fonts */
   --font-sans: var(--font-roboto-mono);
   --font-mono: var(--font-roboto-mono);
+
+  --animate-marquee: marquee 50s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
 }
 
 @media (prefers-color-scheme: dark) {
