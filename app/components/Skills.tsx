@@ -1,4 +1,4 @@
-import { Server, Code, Cloud, Terminal, Database } from 'lucide-react';
+import { Server, Code, Cloud, Terminal, Database, Bot } from 'lucide-react';
 import { 
   FaJava, FaPhp, FaPython, FaReact, FaHtml5, FaCss3Alt, FaLaravel, FaNodeJs, FaDocker, FaJenkins, FaAws, FaLinux, FaGitAlt 
 } from 'react-icons/fa';
@@ -50,7 +50,8 @@ const Skills = () => {
     frontend: ['React', 'Next.js', 'Tailwind CSS', 'HTML5/CSS3', 'Flutter'],
     backend: ['Spring Boot', 'Laravel', 'Node.js', 'Express', 'GraphQL'],
     devops: ['Docker', 'Kubernetes', 'Jenkins', 'AWS', 'GCP', 'Azure', 'CI/CD', 'Linux', 'Git'],
-    databases: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Kafka', 'RabbitMQ']
+    databases: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Kafka', 'RabbitMQ'],
+    aiTools: ['GitHub Copilot', 'Claude', 'ChatGPT', 'Cursor', 'Tabnine']
   };
 
   return (
@@ -121,6 +122,19 @@ const Skills = () => {
           </div>
           <div className="flex flex-wrap gap-2">
             {skills.databases.map(skill => (
+              <span key={skill} className="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-sm rounded-full text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-transparent">{skill}</span>
+            ))}
+          </div>
+        </div>
+
+        {/* AI Tools */}
+        <div className="bg-white dark:bg-slate-800/50 p-6 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all border border-slate-100 dark:border-slate-700/40 shadow-sm dark:shadow-none hover:border-cyan-500/40 hover:shadow-lg hover:shadow-cyan-500/10">
+          <div className="flex items-center mb-4 text-cyan-600 dark:text-cyan-400">
+            <Bot className="mr-2" />
+            <h3 className="text-xl font-bold text-slate-900 dark:text-white">AI Tools</h3>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {skills.aiTools.map(skill => (
               <span key={skill} className="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-sm rounded-full text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-transparent">{skill}</span>
             ))}
           </div>
