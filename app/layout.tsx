@@ -10,6 +10,10 @@ const robotoMono = Roboto_Mono({
 export const metadata: Metadata = {
   title: "JKM",
   description: "José Kupeka Muhlanga.",
+  icons: {
+    icon: '/avatar.jpg',
+    apple: '/avatar.jpg',
+  },
 };
 
 export default function RootLayout({

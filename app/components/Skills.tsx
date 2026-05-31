@@ -1,4 +1,3 @@
-import React from 'react';
 import { Server, Code, Cloud, Terminal, Database } from 'lucide-react';
 import { 
   FaJava, FaPhp, FaPython, FaReact, FaHtml5, FaCss3Alt, FaLaravel, FaNodeJs, FaDocker, FaJenkins, FaAws, FaLinux, FaGitAlt 
@@ -47,7 +46,7 @@ const allTechs = [
 
 const Skills = () => {
   const skills = {
-    languages: ['Java', 'PHP', 'Go', 'JavaScript', 'Python', 'Kotlin', 'C#', 'Dart', 'Bash'],
+    languages: ['Java', 'Scala', 'PHP', 'Go', 'JavaScript', 'Python', 'Kotlin', 'C#', 'Dart', 'Bash'],
     frontend: ['React', 'Next.js', 'Tailwind CSS', 'HTML5/CSS3', 'Flutter'],
     backend: ['Spring Boot', 'Laravel', 'Node.js', 'Express', 'GraphQL'],
     devops: ['Docker', 'Kubernetes', 'Jenkins', 'AWS', 'GCP', 'Azure', 'CI/CD', 'Linux', 'Git'],
@@ -63,7 +62,7 @@ const Skills = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Backend */}
-        <div className="bg-white dark:bg-slate-800/50 p-6 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors border border-slate-100 dark:border-transparent shadow-sm dark:shadow-none">
+        <div className="bg-white dark:bg-slate-800/50 p-6 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all border border-slate-100 dark:border-slate-700/40 shadow-sm dark:shadow-none hover:border-cyan-500/40 hover:shadow-lg hover:shadow-cyan-500/10">
           <div className="flex items-center mb-4 text-cyan-600 dark:text-cyan-400">
             <Server className="mr-2" />
             <h3 className="text-xl font-bold text-slate-900 dark:text-white">Backend</h3>
@@ -76,7 +75,7 @@ const Skills = () => {
         </div>
 
         {/* Languages */}
-        <div className="bg-white dark:bg-slate-800/50 p-6 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors border border-slate-100 dark:border-transparent shadow-sm dark:shadow-none">
+        <div className="bg-white dark:bg-slate-800/50 p-6 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all border border-slate-100 dark:border-slate-700/40 shadow-sm dark:shadow-none hover:border-cyan-500/40 hover:shadow-lg hover:shadow-cyan-500/10">
           <div className="flex items-center mb-4 text-cyan-600 dark:text-cyan-400">
             <Code className="mr-2" />
             <h3 className="text-xl font-bold text-slate-900 dark:text-white">Languages</h3>
@@ -89,7 +88,7 @@ const Skills = () => {
         </div>
 
         {/* DevOps */}
-        <div className="bg-white dark:bg-slate-800/50 p-6 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors border border-slate-100 dark:border-transparent shadow-sm dark:shadow-none">
+        <div className="bg-white dark:bg-slate-800/50 p-6 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all border border-slate-100 dark:border-slate-700/40 shadow-sm dark:shadow-none hover:border-cyan-500/40 hover:shadow-lg hover:shadow-cyan-500/10">
           <div className="flex items-center mb-4 text-cyan-600 dark:text-cyan-400">
             <Cloud className="mr-2" />
             <h3 className="text-xl font-bold text-slate-900 dark:text-white">DevOps & Cloud</h3>
@@ -102,7 +101,7 @@ const Skills = () => {
         </div>
 
         {/* Frontend */}
-        <div className="bg-white dark:bg-slate-800/50 p-6 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors border border-slate-100 dark:border-transparent shadow-sm dark:shadow-none">
+        <div className="bg-white dark:bg-slate-800/50 p-6 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all border border-slate-100 dark:border-slate-700/40 shadow-sm dark:shadow-none hover:border-cyan-500/40 hover:shadow-lg hover:shadow-cyan-500/10">
           <div className="flex items-center mb-4 text-cyan-600 dark:text-cyan-400">
             <Terminal className="mr-2" />
             <h3 className="text-xl font-bold text-slate-900 dark:text-white">Frontend</h3>
@@ -115,7 +114,7 @@ const Skills = () => {
         </div>
 
         {/* Database */}
-        <div className="bg-white dark:bg-slate-800/50 p-6 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors border border-slate-100 dark:border-transparent shadow-sm dark:shadow-none">
+        <div className="bg-white dark:bg-slate-800/50 p-6 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all border border-slate-100 dark:border-slate-700/40 shadow-sm dark:shadow-none hover:border-cyan-500/40 hover:shadow-lg hover:shadow-cyan-500/10">
           <div className="flex items-center mb-4 text-cyan-600 dark:text-cyan-400">
             <Database className="mr-2" />
             <h3 className="text-xl font-bold text-slate-900 dark:text-white">Data & Messaging</h3>

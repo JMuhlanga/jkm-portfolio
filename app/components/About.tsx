@@ -1,4 +1,3 @@
-import React from 'react';
 
 const About = () => {
   return (
@@ -9,21 +8,67 @@ const About = () => {
             <span className="text-cyan-600 dark:text-cyan-400 mr-2">01.</span> About Me
             <span className="hidden md:block h-px bg-slate-200 dark:bg-slate-700 flex-grow ml-4"></span>
           </h2>
-          <div className="space-y-4 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-            <p>
-              Hello! My name is José and I enjoy creating efficient software solutions that live on the internet. 
-              With over <span className="text-cyan-600 dark:text-cyan-400">3 years of experience</span>, I have honed my skills in both monolithic and 
-              microservice architectures.
-            </p>
-            <p>
-              My journey has taken me through diverse sectors including Healthcare (HMIS), Fintech, and Government infrastructure.
-              I am passionate about performance optimization, clean architecture, and sustainable digital transformation.
-            </p>
-            <p>
-              I am fluent in <span className="text-slate-900 dark:text-white">English and Swahili</span>, with intermediate proficiency in <span className="text-slate-900 dark:text-white">French (B2)</span> and basic <span className="text-slate-900 dark:text-white">Portuguese (A1)</span>.
-            </p>
+
+          {/* IDE-style file viewer */}
+          <div className="rounded-lg border border-slate-200 dark:border-slate-700 overflow-hidden">
+            <div className="flex items-center gap-1.5 px-4 py-2.5 bg-slate-100 dark:bg-slate-800/80 border-b border-slate-200 dark:border-slate-700">
+              <span className="w-2.5 h-2.5 rounded-full bg-red-400/80"></span>
+              <span className="w-2.5 h-2.5 rounded-full bg-yellow-400/80"></span>
+              <span className="w-2.5 h-2.5 rounded-full bg-green-400/80"></span>
+              <span className="ml-3 text-xs text-slate-500 dark:text-slate-400 font-mono">about.ts</span>
+            </div>
+
+            <div className="p-6 bg-white dark:bg-slate-900/40 font-mono text-sm leading-relaxed space-y-2">
+              <p className="text-slate-400 dark:text-slate-600">/**</p>
+              <p>
+                <span className="text-slate-400 dark:text-slate-600 mr-3 select-none">*</span>
+                <span className="text-slate-700 dark:text-slate-300">
+                  Hello! I&apos;m José — a Full Stack Engineer who enjoys creating efficient software
+                  solutions. With over{' '}
+                  <span className="text-cyan-600 dark:text-cyan-400">3+ years of experience</span>,
+                  {' '}I&apos;ve honed skills in monolithic and microservice architectures,
+                  with a strong foundation in API security and DevOps practices.
+                </span>
+              </p>
+              <p>
+                <span className="text-slate-400 dark:text-slate-600 mr-3 select-none">*</span>
+                <span className="text-slate-700 dark:text-slate-300">
+                  My work spans Healthcare (HMIS), Fintech, Media, and Government infrastructure.
+                  Passionate about performance optimisation, clean architecture, and end-to-end delivery.
+                </span>
+              </p>
+              <p>
+                <span className="text-slate-400 dark:text-slate-600 mr-3 select-none">*</span>
+                <span className="text-cyan-600 dark:text-cyan-400">@languages </span>
+                <span className="text-amber-600 dark:text-amber-400">&quot;English · Swahili · French · Portuguese&quot;</span>
+              </p>
+              <p className="text-slate-400 dark:text-slate-600"> */</p>
+
+              <p className="pt-2">
+                <span className="text-purple-500 dark:text-purple-400">export const </span>
+                <span className="text-cyan-700 dark:text-cyan-300">engineer</span>
+                <span className="text-slate-700 dark:text-slate-300"> = {'{'}</span>
+              </p>
+              <p className="pl-6">
+                <span className="text-blue-600 dark:text-blue-400">location</span>
+                <span className="text-slate-600 dark:text-slate-400">: </span>
+                <span className="text-amber-600 dark:text-amber-400">&quot;Nairobi, Kenya&quot;</span>
+                <span className="text-slate-600 dark:text-slate-400">,</span>
+              </p>
+              <p className="pl-6">
+                <span className="text-blue-600 dark:text-blue-400">openTo</span>
+                <span className="text-slate-600 dark:text-slate-400">: </span>
+                <span className="text-amber-600 dark:text-amber-400">&quot;remote &amp; on-site opportunities&quot;</span>
+                <span className="text-slate-600 dark:text-slate-400">,</span>
+              </p>
+              <p>
+                <span className="text-slate-700 dark:text-slate-300">{'}'}</span>
+                <span className="text-slate-600 dark:text-slate-400">;</span>
+              </p>
+            </div>
           </div>
         </div>
+
         <div className="md:w-1/3 w-full">
           <div className="relative group">
             <div className="absolute -inset-1 bg-cyan-500 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
